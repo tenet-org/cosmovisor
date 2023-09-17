@@ -1,6 +1,6 @@
 module github.com/cosmos/cosmos-sdk/tests
 
-go 1.21
+go 1.21.0
 
 require (
 	cosmossdk.io/api v0.7.2-0.20230927090904-9dd34510e273
@@ -32,6 +32,8 @@ require (
 	gotest.tools/v3 v3.5.1
 	pgregory.net/rapid v1.1.0
 )
+
+require cosmossdk.io/x/params v0.0.0-00010101000000-000000000000
 
 require (
 	cloud.google.com/go v0.110.7 // indirect
@@ -180,7 +182,7 @@ require (
 	google.golang.org/api v0.134.0 // indirect
 	google.golang.org/appengine v1.6.7 // indirect
 	google.golang.org/genproto v0.0.0-20230913181813-007df8e322eb // indirect
-	google.golang.org/genproto/googleapis/api v0.0.0-20230822172742-b8732ec3820d // indirect
+	google.golang.org/genproto/googleapis/api v0.0.0-20230913181813-007df8e322eb // indirect
 	google.golang.org/genproto/googleapis/rpc v0.0.0-20230920204549-e6e6cdab5c13 // indirect
 	gopkg.in/ini.v1 v1.67.0 // indirect
 	gopkg.in/yaml.v2 v2.4.0 // indirect
@@ -202,6 +204,7 @@ replace (
 	cosmossdk.io/x/evidence => ../x/evidence
 	cosmossdk.io/x/feegrant => ../x/feegrant
 	cosmossdk.io/x/nft => ../x/nft
+	cosmossdk.io/x/params => ../x/params
 	cosmossdk.io/x/protocolpool => ../x/protocolpool
 	cosmossdk.io/x/upgrade => ../x/upgrade
 )
